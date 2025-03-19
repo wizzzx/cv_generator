@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+@function rem($px, $base: 16) {
+  $raw-rem: math.div($px, $base) *1rem;
+  $rounded-rem: math.div(math.round($raw-rem * 100), 100);
+  @return $rounded-rem;
+}

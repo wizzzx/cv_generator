@@ -1,14 +1,26 @@
-@use '../public/styles/main' as *;
+@use "/public/styles/functions" as *;
+@use "/public/styles/media" as *;
 
-.header_container {
+.page {
+  background: var(--color-beige-light);
 
+  .header {
+    display: flex;
+    max-width: rem(1312);
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1.5rem 0;
 
-  .header_logo {
-    font-family: var(--font-sigmar);
-    font-size: rem(16);
+    .header_logo {
+      font-family: var(--font-sigmar);
+      font-size: 2rem;
+    }
+
+    .github_link {
+      font-size: 1.5rem;
+    }
   }
 
-  .github_img {
 
-  }
 }

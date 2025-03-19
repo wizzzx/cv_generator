@@ -1,15 +1,22 @@
 import styles from "./App.module.scss";
-import "../public/styles/main.scss";
+import { Container } from "./assets/components/Container";
 
 function App() {
   return (
-    <>
-      <header className={styles.header_container}>
+    <Container className={styles.page}>
+      <header className={styles.header}>
         <div className={styles.header_logo}>CV Generator</div>
-        <img src="" alt="github logo" className={styles.github_img} />
+        <a
+          href="https://github.com/wizzzx"
+          target={"_blank"}
+          className={styles.github_link}
+        >
+          Github
+        </a>
       </header>
+
       <div></div>
-    </>
+    </Container>
   );
 }
 
