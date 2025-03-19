@@ -10,12 +10,18 @@ function App() {
           href="https://github.com/wizzzx"
           target={"_blank"}
           className={styles.github_link}
+          rel={"noopener noreferrer"}
         >
-          Github
+          GitHub
+          {/*  сюда потом добавить либо анимашку лого гитхаба, либо просто иконку гитхаба, либо стилизовать как то линк*/}
         </a>
       </header>
 
-      <div></div>
+      <section className={styles.inputs_section}></section>
+
+      <section className={styles.cv_section}></section>
+
+      {/*<footer className={styles.footer}>Coming soon</footer>*/}
     </Container>
   );
 }

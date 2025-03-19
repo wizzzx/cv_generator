@@ -1,5 +1,5 @@
-@use "/public/styles/functions" as *;
-@use "/public/styles/media" as *;
+@use "/src/assets/styles/functions" as *;
+@use "/src/assets/styles/media" as *;
 
 .page {
   background: var(--color-beige-light);
@@ -22,5 +22,16 @@
     }
   }
 
+  .inputs_section {
+
+  }
+
+  .cv_section {
+
+  }
+
+  .footer {
+
+  }
 
 }
