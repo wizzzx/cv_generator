@@ -1,5 +1,6 @@
 import styles from "./App.module.scss";
 import { Container } from "./assets/components/Container";
+import { CvLayout } from "./assets/components/CvLayout";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
 
       <section className={styles.inputs_section}></section>
 
-      <section className={styles.cv_section}></section>
+      <section className={styles.cv_section}>
+        <CvLayout />
+      </section>
 
       {/*<footer className={styles.footer}>Coming soon</footer>*/}
     </Container>

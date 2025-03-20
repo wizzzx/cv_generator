@@ -1,0 +1,285 @@
+@use "/src/assets/styles/functions" as *;
+@use "/src/assets/styles/media" as *;
+
+.container {
+  font-family: var(--font-poppins);
+  max-width: rem(595);
+  display: flex;
+
+  .main_section {
+    max-width: rem(210);
+    width: 100%;
+    background: var(--color-blue);
+    color: var(--color-white);
+    padding: rem(31) rem(12);
+
+    .name_wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: rem(20);
+
+      h2 {
+        font-size: rem(18);
+        font-weight: 600;
+      }
+
+      p {
+        font-size: rem(10);
+        font-weight: 400;
+        color: var(--color-gray-light);
+      }
+    }
+
+    .info_wrapper {
+      margin-top: rem(20);
+      font-weight: 400;
+      font-size: rem(10);
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+
+      .info_item {
+        padding: rem(4) rem(8);
+        border-radius: rem(4);
+        background: var(--color-gray-extra-light);
+        color: var(--color-blue);
+      }
+    }
+
+    .skills_wrapper {
+      margin-top: rem(20);
+
+      h3 {
+        font-size: rem(12);
+        font-weight: 600;
+        padding-bottom: rem(8);
+      }
+
+      .skill_list {
+        display: flex;
+        flex-direction: column;
+        list-style: outside;
+        padding-left: rem(20);
+        gap: rem(2);
+
+        .skill_list_item {
+          font-weight: 400;
+          font-size: rem(10);
+        }
+      }
+    }
+
+    .award_wrapper {
+      margin-top: rem(20);
+
+      .awards_header {
+        font-size: rem(12);
+        font-weight: 600;
+        padding-bottom: rem(8);
+      }
+
+      .awards_list {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        .awards_list_item {
+
+
+          .award_name {
+            font-size: rem(10);
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: rem(4);
+          }
+
+          .award_commentary {
+            font-size: rem(8);
+            font-weight: 400;
+            color: var(--color-gray-light);
+          }
+        }
+      }
+    }
+
+    .hobbies_wrapper {
+      margin-top: rem(20);
+
+      h3 {
+        font-size: rem(12);
+        font-weight: 600;
+        padding-bottom: rem(8);
+      }
+
+      .hobbies_list {
+        list-style: outside;
+        padding-left: rem(20);
+        display: flex;
+        flex-direction: column;
+        gap: rem(2);
+        font-size: rem(10);
+        font-weight: 400;
+      }
+    }
+
+    .credentials_wrapper {
+      margin-top: rem(20);
+
+      h3 {
+        font-size: rem(12);
+        font-weight: 600;
+        padding-bottom: rem(8);
+      }
+
+      .credentials_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(12);
+
+        .credentials_list_item {
+          display: flex;
+          gap: rem(8);
+
+          p {
+            text-decoration: 1px solid underline;
+            text-decoration-skip-ink: none;
+            font-size: rem(10);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .secondary_section {
+    max-width: rem(385);
+    width: 100%;
+    background: var(--color-white);
+    padding: rem(32);
+
+    .about_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+
+      h3 {
+        font-size: rem(12);
+        color: var(--color-blue);
+        font-weight: 600;
+      }
+
+      .line {
+        width: 32px;
+        height: 2px;
+        background: var(--color-blue);
+      }
+
+      p {
+        color: var(--color-gray-mid);
+        font-size: rem(8);
+        font-weight: 400;
+        line-height: rem(10);
+      }
+    }
+
+    .education_wrapper {
+
+
+      h3 {
+
+      }
+
+      .education_list {
+
+
+        .education_list_item {
+
+
+          .date {
+
+          }
+
+          .education_item_sub {
+
+
+            .gray_dot {
+
+            }
+            .education_item_text_wrapper {
+
+
+              h4 {
+
+              }
+
+              .studies {
+
+              }
+
+              .education_commentary {
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .experience_wrapper {
+
+
+      h3 {
+
+      }
+
+      .experience_list {
+
+
+        .experience_list_item {
+
+
+          .experience_company {
+
+          }
+
+          .experience_position {
+
+          }
+
+          .experience_commentary {
+
+          }
+        }
+      }
+    }
+
+    .volunteer_wrapper {
+
+
+      h3 {
+
+      }
+
+      .volunteer_list {
+
+
+        .volunteer_list_item {
+
+
+          .volunteer_company {
+
+          }
+
+          .volunteer_position {
+
+          }
+
+          .volunteer_commentary {
+
+          }
+        }
+      }
+    }
+  }
+}
